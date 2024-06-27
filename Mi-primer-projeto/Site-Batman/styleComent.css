@@ -299,8 +299,22 @@ span {
 /** =====================
  * Responsive
  ========================*/
- @media only screen and (max-width: 768px) {
-	.footer-navigation {
+ @media (max-width: 1024px) {  
+    .comments-container {
+        width: 90%;
+    }
+
+    .comments-list:before {
+        left: 22px;
+    }
+
+    .comments-list .comment-box {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-navigation {
         display: block;
     }
     
@@ -309,12 +323,21 @@ span {
     }   
 
     .comments-container {
-		width: 480px;
-	}
+        width: 90%;
+    }
 
-	.comments-list .comment-box {
-		width: 380px;
-	}	 
+    .comments-list:before {
+        display: none;
+    }
+
+    .comment-avatar {
+        width: 50px;
+        height: 50px;
+    }
+
+    .comment-box {
+        width: 100%;
+    }
 }
 
 

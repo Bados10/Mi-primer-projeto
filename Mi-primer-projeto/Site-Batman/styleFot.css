@@ -104,11 +104,21 @@ span {
 
     nav {
         display: none;
-    }
-      
-    .Contatos {
-        width: 95%;
-        display: flex;
+    }  
+        
+    section {
         flex-direction: column;
+        height: auto;
     }
+
+    section img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    section img:hover {
+        width: 100%;
+    }
+    
 }
